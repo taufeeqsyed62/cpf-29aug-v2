@@ -15,7 +15,7 @@ const OTP = () => {
 
     return (
         <div className="flex items-center justify-center h-screen bg-slate-200">
-            <div className="bg-white p-4 rounded-2xl shadow-2xl text-center flex flex-col h-[90vh] w-[50vh]">
+            <div className="bg-white p-4 rounded-2xl shadow-2xl text-center flex flex-col h-5/6 w-80 md:w-96">
                 <img
                     src={Logo}
                     alt="CyGrp Logo"

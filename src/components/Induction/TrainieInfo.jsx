@@ -1,17 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
-const TrainieInfo = () => {
+const VirtualTrainieInfo = () => {
+    const isMobile = useMediaQuery({ maxWidth: 480 });
     return (
-        <div className="min-h-screen bg-white p-4 md:p-8 lg:p-12">
-            <h1 className="text-2xl font-bold mb-6">Register For Training Session</h1>
-            <div className="border p-4 rounded-lg shadow-lg bg-blue-100 mb-6">
-                <div className="flex justify-between items-center">
-                    <span>Mon 14</span>
-                    <span>C.P, New Delhi</span>
+        <div className={`min-h-screen bg-white p-4 md:p-8 lg:p-12 ${isMobile ? "pb-12" : ""}`}>
+            <h1 className={`font-bold mb-6 ${isMobile ? "text-lg" : "text-2xl"}`}>Register For Training Session</h1>
+            <div className="border p-3 rounded-lg shadow-lg bg-blue-100 mb-6">
+                <div className={`${isMobile ? "flex justify-between items-center" : "flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 "}`}>
+                    <span className="text-xs">Mon 14</span>
+                    <span className="text-xs">C.P, New Delhi</span>
+                    <span className="text-xs">8:30 AM - 10:30 AM</span>
                 </div>
-                <h3 className="text-lg font-semibold">Training Session - 1</h3>
-                <p>8:30 AM - 10:30 AM</p>
+                <h3 className={` font-semibold ${isMobile ? "text-medium" : "text-lg"}`}>Training Session - 1</h3>
             </div>
 
             {/* Trainee Information */}
@@ -44,4 +46,4 @@ const TrainieInfo = () => {
     )
 }
 
-export default TrainieInfo;
+export default VirtualTrainieInfo;

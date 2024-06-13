@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 const questions = [
     {
@@ -42,6 +43,7 @@ const Final_Assignment = () => {
     const [userAnswers, setUserAnswers] = useState({});
     const [submitted, setSubmitted] = useState({});
     const questionsPerPage = 3;
+    const isMobile = useMediaQuery({maxWidth : 480})
 
     const handleOptionClick = (questionIndex, option) => {
         setUserAnswers({
@@ -78,22 +80,22 @@ const Final_Assignment = () => {
     const currentQuestions = questions.slice(startIndex, endIndex);
 
     return (
-        <div className="bg-gray-100 min-h-screen flex flex-col items-center px-4 sm:px-4 lg:px-4">
-            <div className="bg-slate-300 w-full h-28 flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-4">
+        <div className={`bg-gray-100 min-h-screen flex flex-col items-center ${isMobile ? "" : "px-4"}`}>
+            <div className={`bg-slate-300 flex items-center justify-between px-1 mb-4 ${isMobile ? "w-full h-26" : "w-full h-28"}`}>
                 <div className="text-center ml-6">
-                    <h1 className="text-xl font-serif font-medium">Final Assignment</h1>
-                    <h1 className="text-3xl font-serif font-medium">Title Goes Here</h1>
+                    <h1 className={` ${isMobile ? "text-medium" : "text-xl font-serif font-medium"}`}>Final Assignment</h1>
+                    <h1 className={` ${isMobile ? "text-lg" : "text-3xl font-serif font-medium"}`}>Title Goes Here</h1>
                 </div>
                 <Link to="/clearence">
-                    <div className="bg-green-500 text-white px-4 py-2 rounded-xl shadow-lg border border-x-2">
-                        Submit Assignment
+                    <div className={`bg-green-500 text-white  rounded-xl shadow-lg border border-x-2 ${isMobile ? "px-2 py-1" : "px-4 py-2"}`}>
+                        Submit 
                     </div>
                 </Link>
             </div>
-            <div className="w-full max-w-2xl">
+            <div className={`w-full max-w-2xl ${isMobile ? "px-4 mt-8" : ""}`}>
                 {currentQuestions.map((question, questionIndex) => (
                     <div key={startIndex + questionIndex} className="mb-6">
-                        <h2 className="text-2xl font-serif mb-4">{startIndex + questionIndex + 1}. {question.question}</h2>
+                        <h2 className={` font-serif mb-4 ${isMobile ? "text-lg" : "text-2xl"}`}>{startIndex + questionIndex + 1}. {question.question}</h2>
                         <div>
                             {question.options.map((option, index) => (
                                 <button
@@ -108,7 +110,7 @@ const Final_Assignment = () => {
                         {userAnswers[startIndex + questionIndex] && !submitted[startIndex + questionIndex] && (
                             <button
                                 onClick={() => handleSubmit(startIndex + questionIndex)}
-                                className="bg-green-500 p-2 rounded mt-2 text-white w-full sm:w-auto"
+                                className={`bg-green-500 p-2 rounded mt-2 text-white w-full ${isMobile ? "w-1/2" : "w-full"}`}
                             >
                                 Submit
                             </button>

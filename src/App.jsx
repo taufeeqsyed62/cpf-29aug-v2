@@ -5,7 +5,7 @@ import OTP from './components/OTP';
 import UserForm from './components/userform';
 import HomePage from './components/HomePage';
 import AboutInd from './components/Induction/AboutInd';
-import Layout from "../src/layout"
+import Layout from "../src/components/Induction/layout"
 import Start_Induction from './components/Induction/start-Induction';
 import Chapter01 from './components/Induction/chapter01';
 import Quiz from './components/Induction/Quiz';
