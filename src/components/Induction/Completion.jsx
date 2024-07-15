@@ -20,7 +20,7 @@
                 <h1 className="text-left mt-5">Choose your Preference</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <Link to={`/start-induction?activeTab=${activeTab === 'part1' ? 'part2' : 'part1'}`}>
-                        <div className="h-32 flex flex-col items-center justify-center bg-slate-300 rounded-xl shadow-lg p-5 m-5">
+                        <div className="h-32 flex flex-col items-center justify-center bg-violet-800 text-white rounded-xl shadow-lg p-5 m-5">
                             <h1 className={` font-serif font-medium ${isMobile ? "text-lg" : "text-2xl"}`}>Continue Solo</h1>
                             <p className={`text-center overflow-wrap: break-word; ${isMobile ? "text-sm" : ""}`}>Complete rest of the induction at your pace</p> {/* Applied overflow-wrap property */}
                         </div>
@@ -29,7 +29,7 @@
                         <p className="text-center font-semibold">OR</p>
                     </div>
                     <Link to="/training">
-                        <div className="h-32 flex flex-col items-center justify-center bg-slate-300 rounded-xl shadow-lg p-5 m-5">
+                        <div className="h-32 flex flex-col items-center justify-center bg-violet-800 text-white rounded-xl shadow-lg p-5 m-5">
                             <h1 className={` font-serif font-medium ${isMobile ? "text-lg" : "text-2xl"}`}>Book a Session</h1>
                             <p className={`text-center overflow-wrap: break-word; ${isMobile ? "text-sm" : ""}`}>Get trained faster with trainer</p> {/* Applied overflow-wrap property */}
                         </div>
