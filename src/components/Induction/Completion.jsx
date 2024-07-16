@@ -12,9 +12,6 @@
                         <h1 className="text-xl sm:text-xl lg:text-2xl font-serif mb-5">You have done with Part 1 of</h1>
                         <h1 className="text-xl sm:text-xl lg:text-2xl font-serif overflow-wrap: break-word;">your induction journey</h1> {/* Applied overflow-wrap property */}
                     </div>
-                    <div className={`sm:mt-20 flex justify-center w-full sm:w-auto sm:h-64 ${isMobile ? "sm:ml-4" : ""}`}>
-                        <div className={`w-5/6 h-64 bg-slate-300 ${isMobile ? "mt-5" : ""}`}></div>
-                    </div>
                 </div>
 
                 <h1 className="text-left mt-5">Choose your Preference</h1>

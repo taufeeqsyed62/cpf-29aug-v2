@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from "../../assets/64d28d4c5130957a48d0e325_Logo.svg"
+import Logo from "../../assets/logo (2).png"
 import { useMediaQuery } from 'react-responsive';
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav className="flex justify-between items-center h-20 px-4 py-2 bg-orange-50">
             <div className="flex items-center">
                 <Link to="cyberpeace.org" className="text-xl font-bold text-black">
-                    <img src={Logo} alt="Company Logo" className={`h-10 ${isMobile ? "w-28" : ""}`} />
+                    <img src={Logo} alt="Company Logo" className={`h-20 ${isMobile ? "w-24" : ""}`} />
                 </Link>
             </div>
             <div className="flex items-center ml-1">

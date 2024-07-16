@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVideo } from '@fortawesome/free-solid-svg-icons';
 import { useMediaQuery } from 'react-responsive';
+import clap from "../../assets/clap_.png"
 
 const Chapter_Completion = () => {
     const isMobile = useMediaQuery({ maxWidth: 480 });
@@ -14,7 +15,9 @@ const Chapter_Completion = () => {
                 <h1 className="text-lg sm:text-xl">You have answered 5 questions correctly</h1>
             </div>
 
-            <div className="w-full sm:w-5/6 h-64 bg-slate-300 mx-auto mb-7"></div>
+            <div className=" flex justify-center items-center w-full h-64 mx-auto mb-7">
+                <img src={clap} alt="" className="w-5/6 h-64 " />
+            </div>
 
             <div className="mb-9 w-full sm:w-5/6 mx-auto">
                 <h1 className="text-xl mb-4">Up Next</h1>
