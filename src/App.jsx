@@ -19,6 +19,7 @@ import TrainieInfo from './components/Induction/TrainieInfo';
 import SessionDetail from './components/Induction/SessionDetail';
 import VirtualTrainieInfo from './components/Induction/VirtualTrainerInfo';
 import VirtualSessionDetail from './components/Induction/VirtaulSessionDetail';
+import CertificatePage from "./components/Induction/CertificatePage";
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="/sessiondetail" element={<Layout><SessionDetail/></Layout>} />
           <Route path="/virtualTrainerInfo" element={<Layout><VirtualTrainieInfo/></Layout>} />
           <Route path="/virtualsessionDetail" element={<Layout><VirtualSessionDetail/></Layout>} />
+          <Route path="/certificate" element={<Layout><CertificatePage/></Layout>} />
         </Routes>
       </Router>
     </>

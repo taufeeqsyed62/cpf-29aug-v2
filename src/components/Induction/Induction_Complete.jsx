@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
+import image01 from "../../assets/Assign.png"
 
 const Induction_Complete = () => {
     const isMobile = useMediaQuery({ maxWidth: 480 })
 
     const DestopView = () => {
         return (
-            <div className="relative">
+            <div className="relative bg-white">
                 <div className="mt-8 mx-auto md:ml-16 md:max-w-2xl">
                     <h1 className="text-3xl font-serif font-medium">Congratulations, You've</h1>
                     <h1 className="text-3xl font-serif font-medium">completed all the chapters!</h1>
@@ -27,17 +28,17 @@ const Induction_Complete = () => {
 
     const MobileView = () => {
         return (
-            <div className="relative px-6">
+            <div className="relative px-6 ">
                 <div className="mt-8 mx-auto md:ml-16 md:max-w-2xl">
                     <h1 className="text-xl text-center font-serif font-medium">Congratulations, You've</h1>
                     <h1 className="text-xl text-center font-serif font-medium">completed all the chapters!</h1>
                 </div>
-                <div className=" mt-8 text-sm text-center mb-20 ">
-                    <p>You have successfully completed the induction. You can now start using the platform.</p>
+                <div className=" mt-8 flex justify-center items-center mb-20 ">
+                    <img src={image01} alt="" />
                 </div>
-                <div className="flex justify-between">
-                    <div>
-                        <Link to="/assignment" className="text-blue-500 text-sm ">Take the <br /> Final Assignment</Link>
+                <div className="flex justify-center items-center flex-col">
+                    <div className="bg-violet-800 px-1 py-2 w-64 text-center rounded-xl mb-3 shadow-lg hover:bg-violet-200">
+                        <Link to="/assignment" className="text-white text-sm ">Take the Final Assignment</Link>
                     </div>
                     <div className="">
                         <Link to="/start-induction" className="text-blue-500 text-sm">Go to Home</Link>
