@@ -6,10 +6,10 @@ import { useMediaQuery } from 'react-responsive';
 const Navbar = () => {
     const isMobile = useMediaQuery({maxWidth : 480})
     return (
-        <nav className="flex justify-between items-center h-20 px-4 py-2 bg-orange-50">
+        <nav className="flex justify-between items-center h-16 px-4 py-2 bg-orange-50">
             <div className="flex items-center">
                 <Link to="cyberpeace.org" className="text-xl font-bold text-black">
-                    <img src={Logo} alt="Company Logo" className={`h-20 ${isMobile ? "w-24" : ""}`} />
+                    <img src={Logo} alt="Company Logo" className={`h-16 ${isMobile ? "w-24" : ""}`} />
                 </Link>
             </div>
             <div className="flex items-center ml-1">

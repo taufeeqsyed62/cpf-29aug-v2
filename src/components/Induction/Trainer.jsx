@@ -202,7 +202,7 @@ const Trainer = () => {
     const MobileView = () => {
         return (
 
-            <div className="min-h-screen bg-orange-50 p-4 pb-12">
+            <div className="min-h-screen bg-[#fffaf0] p-4 pb-12">
                 <h1 className="text-lg mt-3 font-bold mb-6">Register For Training Session</h1>
                 <div className="mb-9 relative">
                     <FontAwesomeIcon
