@@ -8,7 +8,7 @@ const MainLayout = ({ children }) => {
       <Navbar />
        <div className="bg-gray-400 w-full h-0.5 shadow-lg"></div>
       <div className="flex flex-grow">
-        <main className="flex-grow bg-yellow-50">{children}</main>
+        <main className="flex-grow bg-[#fffaf0]">{children}</main>
       </div>
       {/* <Footer />  */}
     </div>

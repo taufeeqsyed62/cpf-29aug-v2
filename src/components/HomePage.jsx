@@ -22,7 +22,7 @@ const HomePage = () => {
     }
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+        <div className="flex items-center justify-center min-h-screen bg-[#fffaf0] p-4">
             <div className="bg-white p-6 rounded-2xl shadow-2xl text-center w-full max-w-xs md:max-w-md flex flex-col h-auto md:h-4/5 lg:h-5/6">
                 <h1 className='text-2xl font-bold font-serif'>Welcome to CyberPeace</h1>
                 <div className="my-6 flex justify-center">

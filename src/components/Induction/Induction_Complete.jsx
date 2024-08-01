@@ -36,8 +36,8 @@ const Induction_Complete = () => {
                 <div className=" mt-8 flex justify-center items-center mb-20 ">
                     <img src={image01} alt="" />
                 </div>
-                <div className="flex justify-center items-center flex-col">
-                    <div className="bg-violet-800 px-1 py-2 w-64 text-center rounded-xl mb-3 shadow-lg hover:bg-violet-200">
+                <div className="flex justify-center items-center flex-col pb-10">
+                    <div className="bg-[#605383] px-1 py-2 w-64 text-center rounded-xl mb-3 shadow-lg hover:bg-violet-200">
                         <Link to="/assignment" className="text-white text-sm ">Take the Final Assignment</Link>
                     </div>
                     <div className="">

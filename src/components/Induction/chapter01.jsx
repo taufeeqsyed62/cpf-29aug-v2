@@ -49,25 +49,46 @@ const Chapter01 = () => {
                     <h1 className="text-xl font-serif font-medium text-center text-slate-500 mb-2">Chapter 01:</h1>
                     <h1 className="text-2xl text-center font-serif font-medium">Title Goes Here</h1>
                 </div>
-                <Link to="/chapter01/quiz" className="">
-                    <h1 className=" mt-4 text-sm ml-5 text-blue-600 font-medium hover:underline">Take Quiz</h1>
-                </Link>
-                <Link to="/rewatch">
-                    <h1 className="mt-4 text-sm ml-5 text-blue-600 font-medium hover:underline">Rewatch Chapter</h1>
-                </Link>
-                <div className={`mt-8 flex justify-center items-center mx-auto rounded-xl ${isMobile ? "h-44 w-52" : "h-96"} bg-slate-300`}>
+                <div className={`mt-8 flex justify-center items-center mx-auto rounded-xl ${isMobile ? "h-44 max-w-64" : "h-96"} bg-slate-300`}>
                     <div className="text-gray-600 mr-5">
                         <FontAwesomeIcon icon={faVideo} className={`h-10 w-10`} />
                     </div>
                 </div>
 
+                <div className="flex mt-7">
+                    <Link to="/chapter01/quiz" className="">
+                        <h1 className="  text-sm ml-5 text-blue-600 font-medium hover:underline">Take Quiz</h1>
+                    </Link>
+                    <Link to="/rewatch">
+                        <h1 className=" text-sm ml-5 text-blue-600 font-medium hover:underline">Next Chapter</h1>
+                    </Link>
+                </div>
 
-                <div className="mt-10 px-7 text-sm">
+                <div className="mt-5 px-7 text-sm font-serif">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate perspiciatis, accusamus atque minus vitae. Saepe obcaecati fuga dolorem amet enim porro, expedita eum fugiat eveniet velit veritatis,
                         corporis similique maiores repellat magnam quas! Quibusdam ratione inventore aut? Voluptates, voluptatem. Modi, sequi atque.
                         Reprehenderit libero velit ipsa eius fugit aliquid mollitia nemo alias laborum quaerat, saepe laboriosam dolorum magnam aut sapiente numquam asperiores
                         reiciendis doloribus temporibus veniam dolore! Ipsum placeat culpa quia nihil, fugit architecto sit facilis accusantium veritatis possimus? Ipsum excepturi adipisci tenetur omnis aliquid minima hic animi debitis porro amet totam, ipsa architecto quia sequi ut quidem eaque.</p>
                 </div>
+
+
+                <div className="mb-9 px-4 mt-10 w-full">
+                <h1 className="text-xl text-left mb-4">Up Next</h1>
+                <Link to="/chapter02">
+                    <div className={`flex flex-row items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg `}>
+                        <div className="flex items-center mb-4 sm:mb-0">
+                            <div className={` bg-blue-200 mr-4 ${isMobile ? "w-12 h-12" : "w-20 h-20"}`}></div>
+                            <div>
+                                <h3 className={` font-semibold ${isMobile ? "text-medium" : "text-lg"}`}>Chapter 2</h3>
+                                <p className={`${isMobile ? "text-xs" : "text-sm"}`}>Introduction to React</p>
+                            </div>
+                        </div>
+                        <div className={`text-gray-600 ${isMobile ? "" : " mr-2"}`}>
+                            <FontAwesomeIcon icon={faVideo} size={isMobile ? "1x" : "2x"} />
+                        </div>
+                    </div>
+                </Link>
+            </div>
             </div>
         )
     }

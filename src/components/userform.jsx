@@ -35,7 +35,7 @@ const UserForm = () => {
     };
 
     return (
-        <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="flex items-center justify-center h-screen bg-[#fffaf0]">
             {/* box */}
             <div className="bg-white p-6 rounded-2xl shadow-2xl text-center flex flex-col justify-between h-5/6 w-80 md:w-96">
                 <div>

@@ -212,27 +212,26 @@ const Start_Induction = () => {
             <div className="pb-12 px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-40 gap-4 md:gap-8">
                     <div className="mt-7 md:mt-7 md:ml-20 col-span-1">
-                        <h1 className="text-2xl text-center font-serif font-medium mb-3">Induction Program</h1>
-                        <p className="text-sm text-center">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                        <div className="mt-10 h-10 w-40 p-1 rounded-lg shadow-lg">
+                        <h1 className="text-2xl text-left font-serif font-bold mb-3">Induction Program</h1>
+                        <p className="text-sm font-medium text-left">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        <div className="mt-10 h-10 w-40 p-1 rounded-lg shadow-lg bg-[#605383] text-white">
                             <Link to="/induction_complete">
-                                <h1 className="text-sm">All Chapters Completed</h1>
-                                <div className="w-36 h-0.5 bg-blue-400"></div>
+                                <h1 className="text-sm font-serif">All Chapters Completed</h1>
+                                <div className="w-36 h-0.5 bg-white"></div>
                             </Link>
                         </div>
                     </div>
                     <div className="col-span-1 flex justify-around items-center mt-7 space-x-4">
-                        <div className="w-28 h-24 bg-violet-700 text-white flex flex-col items-center justify-center text-center rounded-lg">
-                            <h1 className="text-2xl">08</h1>
+                        <div className="w-28 h-24 bg-[#605383] text-white flex flex-col items-center justify-center text-center rounded-2xl shadow-xl">
+                            <h1 className="text-3xl font-medium">08</h1>
                             <h2 className="text-sm">Chapters</h2>
                         </div>
-                        <div className="w-28 h-24 bg-violet-700 text-white flex flex-col items-center justify-center text-center rounded-lg">
-                            <h1 className="text-2xl">01</h1>
+                        <div className="w-28 h-24 bg-[#605383] text-white flex flex-col items-center justify-center text-center rounded-2xl shadow-xl">
+                            <h1 className="text-3xl font-medium">01</h1>
                             <p className="text-sm">Certificate</p>
                         </div>
-                        <div className="w-28 h-24 bg-violet-700 text-white flex flex-col items-center justify-center text-center rounded-lg">
-                            <h1 className="text-2xl">10</h1>
-                            <h3 className="text-sm">hrs</h3>
+                        <div className="w-28 h-24 bg-[#605383] text-white flex flex-col items-center justify-center text-center rounded-2xl shadow-xl">
+                            <h1 className="text-3xl font-medium">10 <span className="text-sm">hr</span></h1>
                             <p className="text-xs">Duration</p>
                         </div>
                     </div>
@@ -241,18 +240,18 @@ const Start_Induction = () => {
                 <div className="mt-14 gap-4 md:gap-8">
                     <div className="ml-0 md:ml-20 mt-10">
                         <div>
-                            <h1 className="text-lg text-center font-medium mb-4">Course Overview</h1>
-                            <p className="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ipsam!</p>
+                            <h1 className="text-lg text-left font-medium mb-2">Course Overview</h1>
+                            <p className="text-sm font-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ipsam!</p>
                         </div>
                         <div className="mt-8">
-                            <h1 className="text-lg text-center font-medium mb-4">What you'll learn</h1>
+                            <h1 className="text-lg text-left font-medium mb-4">What you'll learn</h1>
                             <ul className="ml-7 list-disc text-sm">
                                 <li>Lorem ipsum dolor sit.</li>
                                 <li>Lorem ipsum dolor sit.</li>
                             </ul>
                         </div>
                         <div className="mt-8">
-                            <h1 className="text-lg font-medium text-center mb-4">Test</h1>
+                            <h1 className="text-lg font-medium text-left mb-4">Test</h1>
                             <ul className="ml-7 list-disc text-sm">
                                 <li>10 quick test</li>
                                 <li>1 final assignment</li>
@@ -287,7 +286,7 @@ const Start_Induction = () => {
                             <div className="grid grid-cols-1 gap-4">
                                 {/* Video List */}
                                 <Link to="/chapter01">
-                                    <div className="flex items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
+                                    <div className="flex items-center justify-between p-4 bg-orange-200 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
                                         <div className="flex items-center"> {/* Flex container */}
                                             <div className="w-9 h-9 mr-4">
                                                 <img src={img} alt="" />
@@ -303,7 +302,7 @@ const Start_Induction = () => {
                                         </div>
                                     </div>
                                 </Link>
-                                <div className="flex items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
+                                <div className="flex items-center justify-between p-4 bg-orange-200 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
                                     <div className="flex items-center"> {/* Flex container */}
                                     <div className="w-9 h-9 mr-4">
                                                 <img src={img} alt="" />
@@ -318,13 +317,13 @@ const Start_Induction = () => {
                                         <FontAwesomeIcon icon={faVideo} />
                                     </div>
                                 </div>
-                                <div className="flex items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
+                                <div className="flex items-center justify-between p-4 bg-orange-200 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
                                     <div className="flex items-center"> {/* Flex container */}
                                     <div className="w-9 h-9 mr-4">
                                                 <img src={img} alt="" />
                                             </div> {/* Square div */}
                                         <div>
-                                            <h3 className="text-medium font-semibold">Chapter 1</h3>
+                                            <h3 className="text-medium font-semibold">Chapter 2</h3>
                                             <p className="text-xs">Introduction to React</p>
                                         </div>
                                     </div>
@@ -333,13 +332,13 @@ const Start_Induction = () => {
                                         <FontAwesomeIcon icon={faVideo} />
                                     </div>
                                 </div>
-                                <div className="flex items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
+                                <div className="flex items-center justify-between p-4 bg-orange-200 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
                                     <div className="flex items-center"> {/* Flex container */}
                                     <div className="w-9 h-9 mr-4">
                                                 <img src={img} alt="" />
                                             </div> {/* Square div */}
                                         <div>
-                                            <h3 className="text-medium font-semibold">Chapter 1</h3>
+                                            <h3 className="text-medium font-semibold">Chapter 3</h3>
                                             <p className="text-xs">Introduction to React</p>
                                         </div>
                                     </div>
@@ -359,13 +358,13 @@ const Start_Induction = () => {
                             <div className="grid grid-cols-1 gap-4">
                                 {/* Video List */}
                                 <Link to="/chapter02">
-                                    <div className="flex items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
+                                    <div className="flex items-center justify-between p-4 bg-orange-200 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
                                         <div className="flex items-center"> {/* Flex container */}
                                         <div className="w-9 h-9 mr-4">
                                                 <img src={img} alt="" />
                                             </div> {/* Square div */}
                                             <div>
-                                                <h3 className="text-medium font-semibold">Chapter 2</h3>
+                                                <h3 className="text-medium font-semibold">Chapter 4</h3>
                                                 <p className="text-xs">State Management in React</p>
                                             </div>
                                         </div>
@@ -374,13 +373,13 @@ const Start_Induction = () => {
                                         </div>
                                     </div>
                                 </Link>
-                                <div className="flex items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
+                                <div className="flex items-center justify-between p-4 bg-orange-200 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
                                     <div className="flex items-center"> {/* Flex container */}
                                     <div className="w-9 h-9 mr-4">
                                                 <img src={img} alt="" />
                                             </div> {/* Square div */}
                                         <div>
-                                            <h3 className="text-medium font-semibold">Chapter 2</h3>
+                                            <h3 className="text-medium font-semibold">Chapter 5</h3>
                                             <p className="text-xs">State Management in React</p>
                                         </div>
                                     </div>
@@ -388,13 +387,13 @@ const Start_Induction = () => {
                                         <FontAwesomeIcon icon={faVideo} />
                                     </div>
                                 </div>
-                                <div className="flex items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
+                                <div className="flex items-center justify-between p-4 bg-orange-200 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg">
                                     <div className="flex items-center"> {/* Flex container */}
                                     <div className="w-9 h-9 mr-4">
                                                 <img src={img} alt="" />
                                             </div>{/* Square div */}
                                         <div>
-                                            <h3 className="text-medium font-semibold">Chapter 2</h3>
+                                            <h3 className="text-medium font-semibold">Chapter 6</h3>
                                             <p className="text-xs">State Management in React</p>
                                         </div>
                                     </div>

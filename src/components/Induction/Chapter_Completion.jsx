@@ -8,40 +8,23 @@ import clap from "../../assets/clap_.png"
 const Chapter_Completion = () => {
     const isMobile = useMediaQuery({ maxWidth: 480 });
     return (
-        <div className="flex flex-col items-center px-4 ">
-            <div className="mt-20 mb-20 text-center sm:text-left sm:ml-32">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif mb-5">Congratulations, You Passed!</h1>
-                <h1 className="text-xl sm:text-2xl lg:text-3xl font-serif mb-5">Chapter 01 - 75%</h1>
-                <h1 className="text-lg sm:text-xl">You have answered 5 questions correctly</h1>
-            </div>
-
-            <div className=" flex justify-center items-center w-full h-64 mx-auto mb-7">
-                <img src={clap} alt="" className="w-5/6 h-64 " />
-            </div>
-
-            <div className="mb-9 w-full sm:w-5/6 mx-auto">
-                <h1 className="text-xl mb-4">Up Next</h1>
-                <Link to="/chapter02">
-                    <div className={`flex flex-row sm:flex-row items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg `}>
-                        <div className="flex items-center mb-4 sm:mb-0">
-                            <div className={` bg-blue-200 mr-4 ${isMobile ? "w-12 h-12" : "w-20 h-20"}`}></div>
-                            <div>
-                                <h3 className={` font-semibold ${isMobile ? "text-medium" : "text-lg"}`}>Chapter 2</h3>
-                                <p className={`${isMobile ? "text-xs" : "text-sm"}`}>Introduction to React</p>
-                            </div>
-                        </div>
-                        <div className={`text-gray-600 ${isMobile ? "" : " mr-2"}`}>
-                            <FontAwesomeIcon icon={faVideo} size={isMobile ? "1x" : "2x"} />
-                        </div>
+        <div className="flex flex-col items-center justify-center min-h-screen p-4">
+            <div className=" p-8 text-center max-w-md w-full">
+                <div className="mb-6">
+                    <div className="h-32 w-32 mx-auto mb-4 rounded-full flex items-center justify-center">
+                        {/* Replace this div with your image */}
+                        <img src={clap} alt="" className="h-32 w-32" />
                     </div>
-                </Link>
-            </div>
-            <Link to="/part01/completion">
-                <div className="w-full flex justify-end mb-9">
-                    <div className={`bg-blue-500 hover:bg-green-700 text-white font-bold rounded-lg shadow-md cursor-pointer ${isMobile ? " py-2 px-5 " : " py-4 px-6 "}`}>
-                        Next
-                    </div>
+                    <h2 className="text-lg font-semibold text-gray-500">Segment 1</h2>
+                    <p className="text-xl mt-2">Media Literacy Skills</p>
                 </div>
+                <p className="text-xl text-[#605383] font-serif mt-4">Congrats! You've passed your assessment.</p>
+
+            </div>
+            <Link to="/start-induction">
+                <button className="mt-8 bg-[#605383] text-white py-2 px-4 rounded hover:bg-purple-700">
+                    Start Next Chapter
+                </button>
             </Link>
         </div>
     )

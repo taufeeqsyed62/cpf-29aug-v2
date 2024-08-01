@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
+import map from "../../assets/map.png"
 
 const VirtualSessionDetail = () => {
     const isMobile = useMediaQuery({ maxWidth: 480 });
     return (
         <div className={`min-h-screen bg-yellow-50 p-4 md:p-8 lg:p-12 ${isMobile ? "pb-16" : ""}`}>
             <h1 className={`font-bold mb-6 ${isMobile ? "text-lg" : "text-2xl"}`}>Register For Training Session</h1>
-            <div className="border p-3 rounded-lg shadow-lg bg-violet-800 text-white mb-6">
+            <div className="border p-3 rounded-lg shadow-lg bg-[#605383] text-white mb-6">
                 <div className={`${isMobile ? "flex justify-between items-center" : "flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 "}`}>
                     <span className="text-xs">Mon 14</span>
                     <span className="text-xs">C.P, New Delhi</span>
@@ -22,9 +23,9 @@ const VirtualSessionDetail = () => {
             </div>
 
             {/* Directions */}
-            <div className="w-full flex justify-center items-center mt-10">
-                <div className="bg-gray-200 p-8 w-full sm:w-96 h-72 rounded-lg mb-6 flex justify-center items-center">
-                    <p className="text-2xl font-semibold">Direction</p>
+            <div className="w-full flex justify-center items-center mt-10 mb-5">
+                <div className="shadow-xl">
+                    <img src={map} alt="" />
                 </div>
             </div>
 

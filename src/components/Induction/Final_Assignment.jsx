@@ -80,11 +80,11 @@ const Final_Assignment = () => {
     const currentQuestions = questions.slice(startIndex, endIndex);
 
     return (
-        <div className={`bg-gray-100 min-h-screen flex flex-col items-center ${isMobile ? "" : "px-4"}`}>
-            <div className={`bg-slate-300 flex items-center justify-between px-1 mb-4 ${isMobile ? "w-full h-26" : "w-full h-28"}`}>
+        <div className={`bg-yellow-50 min-h-screen flex flex-col items-center ${isMobile ? "" : "px-4"}`}>
+            <div className={`bg-[#605383] flex items-center justify-between px-1 mb-4 ${isMobile ? "w-full h-26" : "w-full h-28"}`}>
                 <div className="text-center ml-6">
-                    <h1 className={` ${isMobile ? "text-medium" : "text-xl font-serif font-medium"}`}>Final Assignment</h1>
-                    <h1 className={` ${isMobile ? "text-lg" : "text-3xl font-serif font-medium"}`}>Title Goes Here</h1>
+                    <h1 className={` ${isMobile ? "text-medium text-white" : "text-xl font-serif font-medium text-white"}`}>Final Assignment</h1>
+                    <h1 className={` ${isMobile ? "text-lg text-white" : "text-3xl font-serif font-medium text-white"}`}>Title Goes Here</h1>
                 </div>
                 <Link to="/clearence">
                     <div className={`bg-green-500 text-white  rounded-xl shadow-lg border border-x-2 ${isMobile ? "px-2 py-1" : "px-4 py-2"}`}>
@@ -123,14 +123,14 @@ const Final_Assignment = () => {
                 <div className="flex justify-between mt-4 mb-10">
                     <button
                         onClick={handleBack}
-                        className="bg-gray-300 p-2 rounded w-20 sm:w-auto"
+                        className="bg-[#605383] p-2 rounded w-20 sm:w-auto text-white"
                         disabled={currentPage === 0}
                     >
                         Back
                     </button>
                     <button
                         onClick={handleNext}
-                        className="bg-gray-300 p-2 rounded w-20 sm:w-auto"
+                        className="bg-[#605383] p-2 rounded w-20 sm:w-auto text-white"
                         disabled={endIndex >= questions.length}
                     >
                         Next

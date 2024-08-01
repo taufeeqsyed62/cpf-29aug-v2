@@ -80,15 +80,14 @@ const Quiz = () => {
     const currentQuestions = questions.slice(startIndex, endIndex);
 
     return (
-        <div className={`bg-gray-100 min-h-screen flex flex-col items-center ${isMobile ? "" : "px-4"}`}>
-            <div className={`bg-slate-300 flex items-center justify-between px-1 mb-4 ${isMobile ? "w-full h-26" : "w-full h-28"}`}>
-                <div className="text-center ml-6">
-                    <h1 className={` ${isMobile ? "text-medium" : "text-xl font-serif font-medium"}`}>Chapter 1</h1>
-                    <h1 className={` ${isMobile ? "text-lg" : "text-3xl font-serif font-medium"}`}>Title Goes Here</h1>
+        <div className={`bg-yellow-50 min-h-screen flex flex-col items-center ${isMobile ? "" : "px-4"}`}>
+            <div className={`bg-[#605383] flex items-center justify-between px-1 mb-4 ${isMobile ? "w-full h-26" : "w-full h-28"}`}>
+                <div className="text-center ml-6 py-3">
+                    <h1 className={` ${isMobile ? "text-lg text-white" : "text-3xl font-serif font-medium text-white"}`}>Title Goes Here</h1>
                 </div>
                 <Link to="/chapter01/completion">
-                    <div className="bg-red-500 text-white px-2 py-1 rounded-xl text-sm shadow-lg border border-x-2">
-                        End Quiz
+                    <div className="bg-green-500 text-white px-4 py-2 mr-2 rounded-xl text-sm shadow-xl">
+                        Submit
                     </div>
                 </Link>
             </div>
@@ -101,7 +100,7 @@ const Quiz = () => {
                                 <button
                                     key={index}
                                     onClick={() => handleOptionClick(startIndex + questionIndex, option)}
-                                    className={`block w-full mb-2 p-2 border rounded-lg text-left sm:text-center ${userAnswers[startIndex + questionIndex] === option ? "bg-blue-300" : "bg-white"}`}
+                                    className={`block w-full mb-2 p-2 border rounded-lg text-left sm:text-center ${userAnswers[startIndex + questionIndex] === option ? "bg-blue-300" : "bg-yellow-50 border border-black"}`}
                                 >
                                     {optionsLabels[index]}. {option}
                                 </button>
@@ -123,14 +122,14 @@ const Quiz = () => {
                 <div className="flex justify-between mt-4 mb-10">
                     <button
                         onClick={handleBack}
-                        className="bg-gray-300 hover:bg-yellow-400 p-2 rounded w-20 sm:w-auto"
+                        className="bg-[#605383] hover:bg-yellow-400 p-2 rounded w-20 sm:w-auto text-white"
                         disabled={currentPage === 0}
                     >
                         Back
                     </button>
                     <button
                         onClick={handleNext}
-                        className="bg-gray-300 p-2 hover:bg-blue-500 rounded w-20 sm:w-auto"
+                        className="bg-[#605383] p-2 hover:bg-blue-500 rounded w-20 sm:w-auto text-white"
                         disabled={endIndex >= questions.length}
                     >
                         Next

@@ -141,7 +141,7 @@ const Trainer = () => {
                                 <p>8:30 AM - 10:30 AM</p>
                             </div>
                         </Link>
-                        <div className="border p-4 rounded-lg shadow-lg bg-blue-100">
+                        <div className="border p-4 rounded-lg shadow-lg bg-purple-950">
                             <div className="flex justify-between items-center">
                                 <span>Wed 16</span>
                                 <span>xyz, New Delhi</span>
@@ -212,7 +212,7 @@ const Trainer = () => {
                     <select
                         value={selectedState}
                         onChange={handleStateChange}
-                        className="appearance-none w-full md:w-64 p-2 pl-10 border rounded-lg text-medium bg-violet-800 text-white shadow-lg"
+                        className="appearance-none w-full md:w-64 p-2 pl-10 border rounded-lg text-medium bg-[#605383] text-white shadow-lg"
                     >
                         {statesOfIndia.map((state, index) => (
                             <option key={index} value={state}>{state}</option>
@@ -256,7 +256,7 @@ const Trainer = () => {
                     </h2>
                     <div className="flex flex-col space-y-4">
                         <Link to="/trainie">
-                            <div className="border p-3 rounded-lg shadow-lg bg-violet-800 text-white">
+                            <div className="border p-3 rounded-lg shadow-lg bg-[#605383] text-white">
                                 <div className="flex justify-between items-center">
                                     <span className="text-xs">Mon 14</span>
                                     <span className="text-xs">C.P, New Delhi</span>
@@ -265,7 +265,7 @@ const Trainer = () => {
                                 <p className="text-sm">8:30 AM - 10:30 AM</p>
                             </div>
                         </Link>
-                        <div className="border p-3 rounded-lg shadow-lg bg-violet-800 text-white">
+                        <div className="border p-3 rounded-lg shadow-lg bg-[#605383] text-white">
                             <div className="flex justify-between items-center">
                                 <span className="text-xs">Wed 16</span>
                                 <span className="text-xs">xyz, New Delhi</span>
