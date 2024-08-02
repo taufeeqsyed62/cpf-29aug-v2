@@ -24,7 +24,7 @@ const AboutInd = () => {
 
     const DestopView = () => {
         return (
-            <div className="min-h-screen flex flex-col items-center">
+            <div className="min-h-screen font-dm-sans flex flex-col items-center">
                 <div className="w-4/5 md:w-3/4 lg:w-2/3 xl:w-5/6 h-64 bg-slate-300 mt-5 flex justify-center items-center">
                     {/* Content inside the div, if any */}
                 </div>
@@ -33,7 +33,7 @@ const AboutInd = () => {
                         <div className="w-32 h-32 md:w-64 md:h-64 bg-slate-300 rounded-full"></div>
                     </div>
                     <div className="col-span-1 md:order-1 my-7 px-5 md:px-10">
-                        <h1 className="text-3xl font-serif font-medium text-center md:text-left">About the Induction Program</h1>
+                        <h1 className="text-4xl font-serif font-medium text-center md:text-left">About the Induction Program</h1>
                         <p className="mt-3 text-justify md:text-left">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique doloribus fugiat molestiae vitae unde nulla ad natus voluptatibus praesentium aliquam nemo quam delectus laborum qui aspernatur nihil modi aperiam hic maxime,
                             iusto nam. Ducimus optio ad earum officiis cupiditate harum quisquam adipisci eligendi, obcaecati, modi voluptatum magni eveniet nobis?
@@ -78,21 +78,21 @@ const AboutInd = () => {
 
     const MobileView = () => {
         return (
-            <div className="min-h-screen flex flex-col items-center pb-12">
+            <div className="min-h-screen font-dm-sans flex flex-col items-center pb-12">
                 <div className="w-4/5 md:w-3/4 lg:w-2/3 xl:w-5/6 h-64 bg-slate-300 mt-5 flex justify-center items-center">
                     {/* Content inside the div, if any */}
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 h-full mt-3 w-full px-5">
                     <div className="my-7 px-5 md:px-10">
-                        <h1 className="text-xl font-sans font-medium text-center md:text-left">About the Induction Program</h1>
+                        <h1 className="text-3xl font-sans font-medium text-center md:text-left">About the Induction Program</h1>
                         <div className="w-32 h-32 mt-5 bg-slate-300 rounded-full mx-auto"></div>
-                        <p className="mt-3 text-justify text-sm">
+                        <p className="mt-3 text-justify text-md">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique doloribus fugiat molestiae vitae unde nulla ad natus voluptatibus praesentium aliquam nemo quam delectus laborum qui aspernatur nihil modi aperiam hic maxime,
                             iusto nam. Ducimus optio ad earum officiis cupiditate harum quisquam adipisci eligendi, obcaecati, modi voluptatum magni eveniet nobis?
                         </p>
                         <button
                             onClick={handleStartInduction}
-                            className="w-52 h-12 md:h-16 bg-slate-300 mt-8 md:mt-16 mx-auto md:ml-0 rounded-full hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:text-white shadow-xl text-lg md:text-xl font-serif"
+                            className="w-52 h-12 md:h-16 bg-slate-300 mt-8 md:mt-16 mx-auto md:ml-0 rounded-full hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 hover:text-white shadow-xl text-lg md:text-xl"
                         >
                             Start Induction
                         </button>
