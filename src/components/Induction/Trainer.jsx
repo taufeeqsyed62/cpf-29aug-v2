@@ -202,8 +202,8 @@ const Trainer = () => {
     const MobileView = () => {
         return (
 
-            <div className="min-h-screen bg-[#fffaf0] p-4 pb-12">
-                <h1 className="text-2xl mt-3 font-bold font-sans mb-6">Register For Training Session</h1>
+            <div className="min-h-screen bg-[#fffaf0] p-4 pb-12 font-dm-sans">
+                <h1 className="text-3xl mt-3 font-bold font-dm-sans mb-6">Register For Training Session</h1>
                 <div className="mb-9 relative">
                     <FontAwesomeIcon
                         icon={faMapMarkerAlt}

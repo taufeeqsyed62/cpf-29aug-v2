@@ -6,6 +6,7 @@ import Completion from "./Completion";
 import { useLocation } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 import img from "../../assets/85a0e81982663fdee066a35f416c24bd.jpeg"
+import "@fontsource/dm-sans"
 
 const Start_Induction = () => {
     const [activeTab, setActiveTab] = useState("part1");
@@ -212,32 +213,32 @@ const Start_Induction = () => {
             <div className="pb-12 px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 h-auto md:h-40 gap-4 md:gap-8">
                     <div className="mt-7 md:mt-7 md:ml-20 col-span-1">
-                        <h1 className="text-3xl text-left font-sans font-semibold mb-3">Induction Program</h1>
-                        <p className="text-md font-medium text-left">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                        <div className="mt-10 h-10 w-40 p-1 rounded-lg shadow-lg bg-[#605383] text-white">
+                        <h1 className="text-3xl text-left font-dm-sans font-semibold mb-3">Induction Program</h1>
+                        <p className="text-lg font-medium text-left font-dm-sans">Lorem ipsum dolor sit amet</p>
+                        <div className="mt-10 h-10 w-44 p-1 rounded-lg shadow-lg bg-[#605383] text-white">
                             <Link to="/induction_complete">
-                                <h1 className="text-sm font-sans">All Chapters Completed</h1>
-                                <div className="w-36 h-0.5 bg-white"></div>
+                                <h1 className="text-sm font-dm-sans">All Chapters Completed</h1>
+                                <div className="w-40 h-0.5 bg-white"></div>
                             </Link>
                         </div>
                     </div>
                     <div className="col-span-1 flex justify-around items-center mt-7 space-x-4">
                         <div className="w-28 h-24 bg-[#605383] text-white flex flex-col items-center justify-center text-center rounded-2xl shadow-xl">
-                            <h1 className="text-3xl font-medium font-sans">08</h1>
-                            <h2 className="text-sm font-sans">Chapters</h2>
+                            <h1 className="text-3xl font-medium font-dm-sans">08</h1>
+                            <h2 className="text-sm font-dm-sans">Chapters</h2>
                         </div>
                         <div className="w-28 h-24 bg-[#605383] text-white flex flex-col items-center justify-center text-center rounded-2xl shadow-xl">
-                            <h1 className="text-3xl font-medium font-sans">01</h1>
-                            <p className="text-sm font-sans">Certificate</p>
+                            <h1 className="text-3xl font-medium font-dm-sans">01</h1>
+                            <p className="text-sm font-dm-sans">Certificate</p>
                         </div>
                         <div className="w-28 h-24 bg-[#605383] text-white flex flex-col items-center justify-center text-center rounded-2xl shadow-xl">
-                            <h1 className="text-3xl font-medium font-sans">10 <span className="text-sm">hr</span></h1>
-                            <p className="text-sm font-sans">Duration</p>
+                            <h1 className="text-3xl font-medium font-dm-sans">10 <span className="text-sm">hr</span></h1>
+                            <p className="text-sm font-dm-sans">Duration</p>
                         </div>
                     </div>
                 </div>
 
-                <div className="mt-14 gap-4 md:gap-8">
+                <div className="mt-14 gap-4 md:gap-8 font-dm-sans">
                     <div className="ml-0 md:ml-20 mt-10">
                         <div>
                             <h1 className="text-xl text-left font-medium mb-2">Course Overview</h1>
@@ -280,7 +281,7 @@ const Start_Induction = () => {
                 </div>
 
                 {/* Content based on selected tab */}
-                <div className="mt-10 mb-6 text-lg">
+                <div className="mt-10 mb-6 text-lg font-dm-sans">
                     {activeTab === "part1" && (
                         <div>
                             <div className="grid grid-cols-1 gap-4">

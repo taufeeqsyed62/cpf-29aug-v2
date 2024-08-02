@@ -6,8 +6,8 @@ import map from "../../assets/map.png"
 const VirtualSessionDetail = () => {
     const isMobile = useMediaQuery({ maxWidth: 480 });
     return (
-        <div className={`min-h-screen bg-[#fffaf0] p-4 md:p-8 lg:p-12 ${isMobile ? "pb-16" : ""}`}>
-            <h1 className={`font-bold mb-6 ${isMobile ? "text-lg" : "text-2xl"}`}>Register For Training Session</h1>
+        <div className={`min-h-screen font-dm-sans bg-[#fffaf0] p-4 md:p-8 lg:p-12 ${isMobile ? "pb-16" : ""}`}>
+            <h1 className={`font-bold font-dm-sans mb-6 ${isMobile ? "text-2xl" : "text-2xl"}`}>Register For Training Session</h1>
             <div className="border p-3 rounded-lg shadow-lg bg-[#605383] text-white mb-6">
                 <div className={`${isMobile ? "flex justify-between items-center" : "flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 "}`}>
                     <span className="text-sm">Mon 14</span>
@@ -45,7 +45,7 @@ const VirtualSessionDetail = () => {
 
             {/* Instructions */}
             <div>
-                <h2 className="text-xl font-semibold mb-4">Instructions</h2>
+                <h2 className="text-xl font-dm-sans font-semibold mb-4">Instructions</h2>
                 <ul className={`list-disc list-inside space-y-2 ${isMobile ? "text-sm" : ""}`}>
                     <li>Lorem ipsum dolor sit amet consectetur.</li>
                     <li>Eget feugiat euismod tincidunt tortor eu semper. Convallis felis id in mattis.</li>

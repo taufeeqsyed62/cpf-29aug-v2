@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 const VirtualSessionDetail = () => {
     const isMobile = useMediaQuery({ maxWidth: 480 });
     return (
-        <div className={`min-h-screen bg-[#fffaf0] p-4 md:p-8 lg:p-12 ${isMobile ? "pb-16" : ""}`}>
+        <div className={`min-h-screen font-dm-sans bg-[#fffaf0] p-4 md:p-8 lg:p-12 ${isMobile ? "pb-16" : ""}`}>
             <h1 className={`font-bold mb-6 ${isMobile ? "text-2xl " : "text-2xl"}`}>Register For Training Session</h1>
             <div className="border p-3 rounded-lg shadow-lg bg-[#605383] text-white mb-6">
                 <div className={`${isMobile ? "flex justify-between items-center" : "flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 "}`}>

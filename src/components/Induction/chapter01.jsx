@@ -46,7 +46,7 @@ const Chapter01 = () => {
             <div className="relative pb-12">
                 {/* Main content */}
                 <div className="mt-8 px-4  md:max-w-2xl">
-                    <h1 className="text-2xl text-left font-sans font-medium">Title Goes Here</h1>
+                    <h1 className="text-2xl text-left font-dm-sans font-medium">Title Goes Here</h1>
                 </div>
                 <div className={`mt-8 flex justify-center items-center mx-auto rounded-xl ${isMobile ? "h-44 max-w-64" : "h-96"} bg-slate-300`}>
                     <div className="text-gray-600 mr-5">
@@ -56,14 +56,14 @@ const Chapter01 = () => {
 
                 <div className="flex mt-7">
                     <Link to="/chapter01/quiz" className="">
-                        <h1 className="  text-sm ml-5 text-blue-600 font-medium hover:underline">Take Quiz</h1>
+                        <h1 className="  text-lg ml-5 text-blue-600 font-medium hover:underline font-dm-sans">Take Quiz</h1>
                     </Link>
                     <Link to="/rewatch">
-                        <h1 className=" text-sm ml-5 text-blue-600 font-medium hover:underline">Next Chapter</h1>
+                        <h1 className=" text-lg ml-5 text-blue-600 font-medium hover:underline font-dm-sans">Next Chapter</h1>
                     </Link>
                 </div>
 
-                <div className="mt-5 px-7 text-sm font-sans font-[400]">
+                <div className="mt-5 px-7 text-md font-dm-sans font-[500]">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate perspiciatis, accusamus atque minus vitae. Saepe obcaecati fuga dolorem amet enim porro, expedita eum fugiat eveniet velit veritatis,
                         corporis similique maiores repellat magnam quas! Quibusdam ratione inventore aut? Voluptates, voluptatem. Modi, sequi atque.
                         Reprehenderit libero velit ipsa eius fugit aliquid mollitia nemo alias laborum quaerat, saepe laboriosam dolorum magnam aut sapiente numquam asperiores
@@ -72,7 +72,7 @@ const Chapter01 = () => {
 
 
                 <div className="mb-9 px-4 mt-10 w-full">
-                <h1 className="text-xl text-left mb-4">Up Next</h1>
+                <h1 className="text-xl font-dm-sans text-left mb-4">Up Next</h1>
                 <Link to="/chapter02">
                     <div className={`flex flex-row items-center justify-between p-4 bg-slate-100 hover:bg-slate-300 cursor-pointer rounded-xl shadow-lg `}>
                         <div className="flex items-center mb-4 sm:mb-0">

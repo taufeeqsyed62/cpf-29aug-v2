@@ -16,7 +16,7 @@ const VirtualTrainieInfo = () => {
         }, 3000); // Show the success message for 3 seconds
     };
     return (
-        <div className={`min-h-screen bg-[#fffaf0] p-4 md:p-8 lg:p-12 ${isMobile ? "pb-12" : ""}`}>
+        <div className={`min-h-screen font-dm-sans bg-[#fffaf0] p-4 md:p-8 lg:p-12 ${isMobile ? "pb-12" : ""}`}>
             <h1 className={`font-bold mb-6 ${isMobile ? "text-2xl " : "text-2xl"}`}>Register For Training Session</h1>
             <div className="border p-3 rounded-lg shadow-lg bg-[#605383] text-white mb-6">
                 <div className={`${isMobile ? "flex justify-between items-center" : "flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 "}`}>
@@ -55,7 +55,7 @@ const VirtualTrainieInfo = () => {
                 </button>
             </div>
             {showSuccess && (
-                <div className="fixed bg-[#605383] inset-0 flex justify-center items-center p-4">
+                <div className="fixed bg-[#605383] font-dm-sans inset-0 flex justify-center items-center p-4">
                     <div className="bg-yellow-50 p-8 rounded-lg shadow-lg text-center max-w-md">
                         <h2 className="text-2xl font-bold mb-2">Registration Successful!</h2>
                         <p className="mb-6 text-sm">The zoom link has been emailed to your registered email id</p>

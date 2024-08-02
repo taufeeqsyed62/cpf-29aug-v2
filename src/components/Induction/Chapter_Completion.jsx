@@ -8,7 +8,7 @@ import clap from "../../assets/clap_.png"
 const Chapter_Completion = () => {
     const isMobile = useMediaQuery({ maxWidth: 480 });
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen p-4">
+        <div className="flex flex-col items-center justify-center min-h-screen p-4 font-dm-sans">
             <div className=" p-8 text-center max-w-md w-full">
                 <div className="mb-6">
                     <div className="h-32 w-32 mx-auto mb-4 rounded-full flex items-center justify-center">
@@ -18,11 +18,11 @@ const Chapter_Completion = () => {
                     <h2 className="text-lg font-semibold font-sans text-gray-500">Segment 1</h2>
                     <p className="text-xl mt-2 font-sans">Media Literacy Skills</p>
                 </div>
-                <p className="text-xl text-[#605383] font-sans font-semibold mt-4">Congrats! You've passed your assessment.</p>
+                <p className="text-2xl text-[#605383] font-semibold mt-4">Congrats! You've passed your assessment.</p>
 
             </div>
             <Link to="/start-induction">
-                <button className="mt-8 bg-[#605383] font-sans text-white py-2 px-4 rounded hover:bg-purple-700">
+                <button className="mt-8 bg-[#605383] font-dm-sans text-white py-2 px-4 rounded hover:bg-purple-700">
                     Start Next Chapter
                 </button>
             </Link>

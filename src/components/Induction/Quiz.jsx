@@ -80,7 +80,7 @@ const Quiz = () => {
     const currentQuestions = questions.slice(startIndex, endIndex);
 
     return (
-        <div className={`bg-yellow-50 min-h-screen flex flex-col items-center ${isMobile ? "" : "px-4"}`}>
+        <div className={`bg-yellow-50 min-h-screen font-dm-sans flex flex-col items-center ${isMobile ? "" : "px-4"}`}>
             <div className={`bg-[#605383] flex items-center justify-between px-1 mb-4 ${isMobile ? "w-full h-26" : "w-full h-28"}`}>
                 <div className="text-center ml-6 py-3">
                     <h1 className={` ${isMobile ? "text-lg text-white" : "text-3xl font-sans font-medium text-white"}`}>Title Goes Here</h1>
@@ -94,13 +94,13 @@ const Quiz = () => {
             <div className={`w-full max-w-2xl ${isMobile ? "px-4 mt-8" : ""}`}>
                 {currentQuestions.map((question, questionIndex) => (
                     <div key={startIndex + questionIndex} className="mb-6">
-                        <h2 className={` font-sans mb-4 ${isMobile ? "text-lg" : "text-2xl"}`}>{startIndex + questionIndex + 1}. {question.question}</h2>
+                        <h2 className={` font-dm-sans mb-4 ${isMobile ? "text-xl" : "text-2xl"}`}>{startIndex + questionIndex + 1}. {question.question}</h2>
                         <div>
                             {question.options.map((option, index) => (
                                 <button
                                     key={index}
                                     onClick={() => handleOptionClick(startIndex + questionIndex, option)}
-                                    className={`block w-full mb-2 p-2 border rounded-lg text-left sm:text-center ${userAnswers[startIndex + questionIndex] === option ? "bg-blue-300" : "bg-yellow-50 border border-black"}`}
+                                    className={`block w-full mb-2 p-2 border font-dm-sans rounded-lg text-left sm:text-center ${userAnswers[startIndex + questionIndex] === option ? "bg-blue-300" : "bg-yellow-50 border border-black"}`}
                                 >
                                     {optionsLabels[index]}. {option}
                                 </button>
@@ -119,7 +119,7 @@ const Quiz = () => {
                         )}
                     </div>
                 ))}
-                <div className="flex justify-between mt-4 mb-10">
+                <div className="flex justify-between mt-4 mb-10 font-dm-sans">
                     <button
                         onClick={handleBack}
                         className="bg-[#605383] hover:bg-yellow-400 p-2 rounded w-20 sm:w-auto text-white"

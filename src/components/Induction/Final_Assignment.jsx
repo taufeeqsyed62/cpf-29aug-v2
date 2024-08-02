@@ -80,7 +80,7 @@ const Final_Assignment = () => {
     const currentQuestions = questions.slice(startIndex, endIndex);
 
     return (
-        <div className={`bg-yellow-50 min-h-screen flex flex-col items-center ${isMobile ? "" : "px-4"}`}>
+        <div className={`bg-yellow-50 min-h-screen flex flex-col items-center font-dm-sans ${isMobile ? "" : "px-4"}`}>
             <div className={`bg-[#605383] flex items-center justify-between px-1 mb-4 ${isMobile ? "w-full h-26" : "w-full h-28"}`}>
                 <div className="text-center ml-6">
                     <h1 className={` ${isMobile ? "text-medium text-white" : "text-xl font-sans font-medium text-white"}`}>Final Assignment</h1>
@@ -95,7 +95,7 @@ const Final_Assignment = () => {
             <div className={`w-full max-w-2xl ${isMobile ? "px-4 mt-8" : ""}`}>
                 {currentQuestions.map((question, questionIndex) => (
                     <div key={startIndex + questionIndex} className="mb-6">
-                        <h2 className={` font-sans mb-4 ${isMobile ? "text-lg" : "text-2xl"}`}>{startIndex + questionIndex + 1}. {question.question}</h2>
+                        <h2 className={` font-dm-sans mb-4 ${isMobile ? "text-xl" : "text-2xl"}`}>{startIndex + questionIndex + 1}. {question.question}</h2>
                         <div>
                             {question.options.map((option, index) => (
                                 <button
