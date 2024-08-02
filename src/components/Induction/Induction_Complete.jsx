@@ -30,18 +30,18 @@ const Induction_Complete = () => {
         return (
             <div className="relative px-6 ">
                 <div className="mt-8 mx-auto md:ml-16 md:max-w-2xl">
-                    <h1 className="text-xl text-center font-serif font-medium">Congratulations, You've</h1>
-                    <h1 className="text-xl text-center font-serif font-medium">completed all the chapters!</h1>
+                    <h1 className="text-2xl text-left font-sans font-medium">Congratulations, You've</h1>
+                    <h1 className="text-2xl text-left font-sans font-medium">completed all the chapters!</h1>
                 </div>
                 <div className=" mt-8 flex justify-center items-center mb-20 ">
                     <img src={image01} alt="" />
                 </div>
                 <div className="flex justify-center items-center flex-col pb-10">
                     <div className="bg-[#605383] px-1 py-2 w-64 text-center rounded-xl mb-3 shadow-lg hover:bg-violet-200">
-                        <Link to="/assignment" className="text-white text-sm ">Take the Final Assignment</Link>
+                        <Link to="/assignment" className="text-white text-lg ">Take the Final Assignment</Link>
                     </div>
                     <div className="">
-                        <Link to="/start-induction" className="text-blue-500 text-sm">Go to Home</Link>
+                        <Link to="/start-induction" className="text-blue-500 text-lg">Go to Home</Link>
                     </div>
                 </div>
             </div>

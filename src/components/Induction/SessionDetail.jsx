@@ -6,15 +6,15 @@ import map from "../../assets/map.png"
 const VirtualSessionDetail = () => {
     const isMobile = useMediaQuery({ maxWidth: 480 });
     return (
-        <div className={`min-h-screen bg-yellow-50 p-4 md:p-8 lg:p-12 ${isMobile ? "pb-16" : ""}`}>
+        <div className={`min-h-screen bg-[#fffaf0] p-4 md:p-8 lg:p-12 ${isMobile ? "pb-16" : ""}`}>
             <h1 className={`font-bold mb-6 ${isMobile ? "text-lg" : "text-2xl"}`}>Register For Training Session</h1>
             <div className="border p-3 rounded-lg shadow-lg bg-[#605383] text-white mb-6">
                 <div className={`${isMobile ? "flex justify-between items-center" : "flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 "}`}>
-                    <span className="text-xs">Mon 14</span>
+                    <span className="text-sm">Mon 14</span>
                     <span className="text-xs">C.P, New Delhi</span>
-                    <span className="text-xs">8:30 AM - 10:30 AM</span>
+                    <span className="text-sm">8:30 AM - 10:30 AM</span>
                 </div>
-                <h3 className={` font-semibold ${isMobile ? "text-medium" : "text-lg"}`}>Training Session - 1</h3>
+                <h3 className={` font-semibold ${isMobile ? "text-lg" : "text-lg"}`}>Training Session - 1</h3>
             </div>
 
             {/* Registration Confirmation */}

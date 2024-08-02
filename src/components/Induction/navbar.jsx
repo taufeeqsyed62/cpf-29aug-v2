@@ -13,8 +13,8 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="flex items-center ml-1">
-                <Link to="/aboutInd" className={`text-black  ${isMobile ? "mr-2 text-sm" : "mr-9"}`}>Induction</Link>
-                <Link to="/logout" className={`text-black  ${isMobile ? "mr-1 text-sm ml-1" : "mr-8"}`}>Log out</Link>
+                <Link to="/aboutInd" className={`text-black font-sans  ${isMobile ? "mr-2 text-md" : "mr-9"}`}>Induction</Link>
+                <Link to="/logout" className={`text-black font-sans  ${isMobile ? "mr-1 text-md ml-1" : "mr-8"}`}>Log out</Link>
             </div>
             
         </nav>

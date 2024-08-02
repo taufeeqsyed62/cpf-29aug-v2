@@ -46,8 +46,7 @@ const Chapter01 = () => {
             <div className="relative pb-12">
                 {/* Main content */}
                 <div className="mt-8 px-4  md:max-w-2xl">
-                    <h1 className="text-xl font-serif font-medium text-center text-slate-500 mb-2">Chapter 01:</h1>
-                    <h1 className="text-2xl text-center font-serif font-medium">Title Goes Here</h1>
+                    <h1 className="text-2xl text-left font-sans font-medium">Title Goes Here</h1>
                 </div>
                 <div className={`mt-8 flex justify-center items-center mx-auto rounded-xl ${isMobile ? "h-44 max-w-64" : "h-96"} bg-slate-300`}>
                     <div className="text-gray-600 mr-5">
@@ -64,7 +63,7 @@ const Chapter01 = () => {
                     </Link>
                 </div>
 
-                <div className="mt-5 px-7 text-sm font-serif">
+                <div className="mt-5 px-7 text-sm font-sans font-[400]">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptate perspiciatis, accusamus atque minus vitae. Saepe obcaecati fuga dolorem amet enim porro, expedita eum fugiat eveniet velit veritatis,
                         corporis similique maiores repellat magnam quas! Quibusdam ratione inventore aut? Voluptates, voluptatem. Modi, sequi atque.
                         Reprehenderit libero velit ipsa eius fugit aliquid mollitia nemo alias laborum quaerat, saepe laboriosam dolorum magnam aut sapiente numquam asperiores
@@ -79,8 +78,8 @@ const Chapter01 = () => {
                         <div className="flex items-center mb-4 sm:mb-0">
                             <div className={` bg-blue-200 mr-4 ${isMobile ? "w-12 h-12" : "w-20 h-20"}`}></div>
                             <div>
-                                <h3 className={` font-semibold ${isMobile ? "text-medium" : "text-lg"}`}>Chapter 2</h3>
-                                <p className={`${isMobile ? "text-xs" : "text-sm"}`}>Introduction to React</p>
+                                <h3 className={` font-semibold font-sans ${isMobile ? "text-medium" : "text-lg"}`}>Chapter 2</h3>
+                                <p className={`${isMobile ? "text-xs font-sans" : "text-sm font-sans"}`}>Introduction to React</p>
                             </div>
                         </div>
                         <div className={`text-gray-600 ${isMobile ? "" : " mr-2"}`}>

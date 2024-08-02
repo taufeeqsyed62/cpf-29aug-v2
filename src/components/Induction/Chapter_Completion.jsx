@@ -15,14 +15,14 @@ const Chapter_Completion = () => {
                         {/* Replace this div with your image */}
                         <img src={clap} alt="" className="h-32 w-32" />
                     </div>
-                    <h2 className="text-lg font-semibold text-gray-500">Segment 1</h2>
-                    <p className="text-xl mt-2">Media Literacy Skills</p>
+                    <h2 className="text-lg font-semibold font-sans text-gray-500">Segment 1</h2>
+                    <p className="text-xl mt-2 font-sans">Media Literacy Skills</p>
                 </div>
-                <p className="text-xl text-[#605383] font-serif mt-4">Congrats! You've passed your assessment.</p>
+                <p className="text-xl text-[#605383] font-sans font-semibold mt-4">Congrats! You've passed your assessment.</p>
 
             </div>
             <Link to="/start-induction">
-                <button className="mt-8 bg-[#605383] text-white py-2 px-4 rounded hover:bg-purple-700">
+                <button className="mt-8 bg-[#605383] font-sans text-white py-2 px-4 rounded hover:bg-purple-700">
                     Start Next Chapter
                 </button>
             </Link>

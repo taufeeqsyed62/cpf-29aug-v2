@@ -83,8 +83,8 @@ const Final_Assignment = () => {
         <div className={`bg-yellow-50 min-h-screen flex flex-col items-center ${isMobile ? "" : "px-4"}`}>
             <div className={`bg-[#605383] flex items-center justify-between px-1 mb-4 ${isMobile ? "w-full h-26" : "w-full h-28"}`}>
                 <div className="text-center ml-6">
-                    <h1 className={` ${isMobile ? "text-medium text-white" : "text-xl font-serif font-medium text-white"}`}>Final Assignment</h1>
-                    <h1 className={` ${isMobile ? "text-lg text-white" : "text-3xl font-serif font-medium text-white"}`}>Title Goes Here</h1>
+                    <h1 className={` ${isMobile ? "text-medium text-white" : "text-xl font-sans font-medium text-white"}`}>Final Assignment</h1>
+                    <h1 className={` ${isMobile ? "text-lg text-white" : "text-3xl font-sans font-medium text-white"}`}>Title Goes Here</h1>
                 </div>
                 <Link to="/clearence">
                     <div className={`bg-green-500 text-white  rounded-xl shadow-lg border border-x-2 ${isMobile ? "px-2 py-1" : "px-4 py-2"}`}>
@@ -95,7 +95,7 @@ const Final_Assignment = () => {
             <div className={`w-full max-w-2xl ${isMobile ? "px-4 mt-8" : ""}`}>
                 {currentQuestions.map((question, questionIndex) => (
                     <div key={startIndex + questionIndex} className="mb-6">
-                        <h2 className={` font-serif mb-4 ${isMobile ? "text-lg" : "text-2xl"}`}>{startIndex + questionIndex + 1}. {question.question}</h2>
+                        <h2 className={` font-sans mb-4 ${isMobile ? "text-lg" : "text-2xl"}`}>{startIndex + questionIndex + 1}. {question.question}</h2>
                         <div>
                             {question.options.map((option, index) => (
                                 <button

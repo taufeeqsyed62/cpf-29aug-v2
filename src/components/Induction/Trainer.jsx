@@ -203,7 +203,7 @@ const Trainer = () => {
         return (
 
             <div className="min-h-screen bg-[#fffaf0] p-4 pb-12">
-                <h1 className="text-lg mt-3 font-bold mb-6">Register For Training Session</h1>
+                <h1 className="text-2xl mt-3 font-bold font-sans mb-6">Register For Training Session</h1>
                 <div className="mb-9 relative">
                     <FontAwesomeIcon
                         icon={faMapMarkerAlt}
@@ -254,7 +254,7 @@ const Trainer = () => {
                             </span>
                         )}
                     </h2>
-                    <div className="flex flex-col space-y-4">
+                    <div className="flex flex-col space-y-4 font-sans">
                         <Link to="/trainie">
                             <div className="border p-3 rounded-lg shadow-lg bg-[#605383] text-white">
                                 <div className="flex justify-between items-center">
