@@ -94,13 +94,13 @@ const Quiz = () => {
             <div className={`w-full max-w-2xl ${isMobile ? "px-4 mt-8" : ""}`}>
                 {currentQuestions.map((question, questionIndex) => (
                     <div key={startIndex + questionIndex} className="mb-6">
-                        <h2 className={` font-dm-sans mb-4 ${isMobile ? "text-xl" : "text-2xl"}`}>{startIndex + questionIndex + 1}. {question.question}</h2>
+                        <h2 className={` font-dm-sans mb-4 ${isMobile ? "text-[18px]" : "text-[14px]"}`}>{startIndex + questionIndex + 1}. {question.question}</h2>
                         <div>
                             {question.options.map((option, index) => (
                                 <button
                                     key={index}
                                     onClick={() => handleOptionClick(startIndex + questionIndex, option)}
-                                    className={`block w-full mb-2 p-2 border font-dm-sans rounded-lg text-left sm:text-center ${userAnswers[startIndex + questionIndex] === option ? "bg-blue-300" : "bg-yellow-50 border border-black"}`}
+                                    className={`block w-full mb-2 p-2 border font-dm-sans rounded-lg text-left texr-[12px] sm:text-center ${userAnswers[startIndex + questionIndex] === option ? "bg-blue-300" : "bg-yellow-50 border border-black"}`}
                                 >
                                     {optionsLabels[index]}. {option}
                                 </button>

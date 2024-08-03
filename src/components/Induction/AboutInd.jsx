@@ -84,9 +84,9 @@ const AboutInd = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 h-full mt-3 w-full px-5">
                     <div className="my-7 px-5 md:px-10">
-                        <h1 className="text-3xl font-sans font-medium text-center md:text-left">About the Induction Program</h1>
+                        <h1 className="text-[24px] font-sans font-medium text-center md:text-left">About the Induction Program</h1>
                         <div className="w-32 h-32 mt-5 bg-slate-300 rounded-full mx-auto"></div>
-                        <p className="mt-3 text-justify text-md">
+                        <p className="mt-3 text-justify text-[12px]">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique doloribus fugiat molestiae vitae unde nulla ad natus voluptatibus praesentium aliquam nemo quam delectus laborum qui aspernatur nihil modi aperiam hic maxime,
                             iusto nam. Ducimus optio ad earum officiis cupiditate harum quisquam adipisci eligendi, obcaecati, modi voluptatum magni eveniet nobis?
                         </p>

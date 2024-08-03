@@ -23,9 +23,9 @@ const HomePage = () => {
     }
 
     return (
-        <div className="flex items-center font-sans justify-center min-h-screen bg-[#fffaf0] p-4">
+        <div className="flex items-center font-dm-sans justify-center min-h-screen bg-[#fffaf0] p-4">
             <div className="bg-white p-6 rounded-2xl shadow-2xl text-center w-full max-w-xs md:max-w-md flex flex-col h-auto md:h-4/5 lg:h-5/6">
-                <h1 className='text-2xl font-bold font-sans'>Welcome to CyberPeace</h1>
+                <h1 className='text-xl font-bold font-dm-sans'>Welcome to CyberPeace</h1>
                 <div className="my-6 flex justify-center">
                     <img src={Logo} alt="CyGrp Logo" className="h-32 md:h-48" />
                 </div>

@@ -11,7 +11,7 @@ const Clearence = () => {
                 <h1 className="text-4xl  font-dm-sans font-medium text-[#605383]">Congratulations</h1>
             </div>
             <div className="text-center mt-4 mx-auto mb-5 max-w-2xl"> {/* Center the text */}
-                <p className="text-xl font-dm-sans sm:text-lg lg:text-xl">You have successfully completed the induction. Welcome Aboard!!!!</p>
+                <p className="text-[16px] font-dm-sans sm:text-lg lg:text-xl">You have successfully completed the induction. Welcome Aboard!!!!</p>
             </div>
             <div className="relative w-full bg-white flex justify-center items-center mb-8 rounded-lg shadow-md"> {/* Adjusted margin */}
                 <img src={image01} alt="" />
@@ -19,15 +19,15 @@ const Clearence = () => {
             <div className="w-full sm:w-3/4 lg:w-1/2 mt-8 font-dm-sans text-lg">
                 <Link to="/certificate">
                     <div className="w-full bg-[#605383] hover:bg-indigo-700 text-white rounded-xl flex justify-center items-center shadow-lg cursor-pointer py-4 mb-4">
-                        <h1 className="text-xl">Collect Certificate</h1>
+                        <h1 className="text-lg">Collect Certificate</h1>
                     </div>
                 </Link>
                 <div className="w-full bg-[#605383] hover:bg-indigo-700 text-white rounded-xl flex justify-center items-center shadow-lg cursor-pointer py-4 mb-4">
-                    <h1 className="text-xl">Do you want to be Trainer?</h1>
+                    <h1 className="text-lg">Do you want to be Trainer?</h1>
                 </div>
                 <Link to="/part01/completion">
                     <div className="w-full bg-[#605383] hover:bg-indigo-700 text-white rounded-xl flex justify-center items-center shadow-lg cursor-pointer py-4 mb-4">
-                        <h1 className="text-xl">Continue</h1>
+                        <h1 className="text-lg">Continue</h1>
                     </div>
                 </Link>
             </div>
