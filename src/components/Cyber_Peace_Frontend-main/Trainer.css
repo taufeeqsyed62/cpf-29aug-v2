@@ -1,0 +1,100 @@
+
+.feedback-container {
+    /* width: 400px; */
+    margin: 100px auto;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "poppins";
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: "poppins";
+}
+
+p {
+    font-family: "poppins";
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.rating-section,
+.feedback-section {
+    font-family: "poppins";
+    margin-bottom: 20px;
+}
+
+.rating-section label,
+.feedback-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.stars {
+    display: flex;
+}
+
+.star {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star.filled {
+    color: #f2b600;
+}
+
+.feedback-section textarea {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    resize: none;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cancel-button,
+.submit-button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.cancel-button {
+    background: #f1f1f1;
+    color: #555;
+}
+
+.submit-button {
+    background: #5f63f2;
+    color: #fff;
+}
+
+.cancel-button:hover {
+    background: #e1e1e1;
+}
+
+.submit-button:hover {
+    background: #4e50e8;
+}
+
+

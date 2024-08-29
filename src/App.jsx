@@ -1,11 +1,11 @@
-import { React,useState } from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css'
+import './App.css';
 import OTP from './components/OTP';
 import UserForm from './components/userform';
 import HomePage from './components/HomePage';
 import AboutInd from './components/Induction/AboutInd';
-import Layout from "../src/components/Induction/layout"
+import Layout from "../src/components/Induction/layout";
 import Start_Induction from './components/Induction/start-Induction';
 import Chapter01 from './components/Induction/chapter01';
 import Quiz from './components/Induction/Quiz';
@@ -21,8 +21,12 @@ import VirtualTrainieInfo from './components/Induction/VirtualTrainerInfo';
 import VirtualSessionDetail from './components/Induction/VirtaulSessionDetail';
 import CertificatePage from "./components/Induction/CertificatePage";
 
-function App() {
+// Importing new components
+import Passed from './components/Induction/Passed';
+import Failed from './components/Induction/Failed';
+import Questionsheet from './components/Induction/Questionsheet';
 
+function App() {
   return (
     <>
       <Router>
@@ -30,25 +34,30 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/user" element={<UserForm />} />
           <Route path="/otp" element={<OTP />} />
-          <Route path="/aboutInd" element={<Layout><AboutInd/></Layout>} />
-          <Route path="/start-induction" element={<Layout><Start_Induction/></Layout>} />
-          <Route path="/chapter01" element={<Layout><Chapter01/></Layout>} />
-          <Route path="/chapter01/quiz" element={<Layout><Quiz/></Layout>} />
-          <Route path="/chapter01/completion" element={<Layout><Chapter_Completion/></Layout>} />
-          <Route path="/part01/completion" element={<Layout><Completion/></Layout>} />
-          <Route path="/induction_complete" element={<Layout><Induction_Complete/></Layout>} />
-          <Route path="/assignment" element={<Layout><Final_Assignment/></Layout>} />
-          <Route path="/clearence" element={<Layout><Clearence/></Layout>} />
-          <Route path="/training" element={<Layout><Trainer/></Layout>} />
-          <Route path="/trainie" element={<Layout><TrainieInfo/></Layout>} />
-          <Route path="/sessiondetail" element={<Layout><SessionDetail/></Layout>} />
-          <Route path="/virtualTrainerInfo" element={<Layout><VirtualTrainieInfo/></Layout>} />
-          <Route path="/virtualsessionDetail" element={<Layout><VirtualSessionDetail/></Layout>} />
-          <Route path="/certificate" element={<Layout><CertificatePage/></Layout>} />
+          <Route path="/aboutInd" element={<Layout><AboutInd /></Layout>} />
+          <Route path="/start-induction" element={<Layout><Start_Induction /></Layout>} />
+          <Route path="/chapter01" element={<Layout><Chapter01 /></Layout>} />
+          <Route path="/chapter01/quiz" element={<Layout><Quiz /></Layout>} />
+          <Route path="/chapter01/completion" element={<Layout><Chapter_Completion /></Layout>} />
+          <Route path="/part01/completion" element={<Layout><Completion /></Layout>} />
+          <Route path="/induction_complete" element={<Layout><Induction_Complete /></Layout>} />
+          <Route path="/assignment" element={<Layout><Final_Assignment /></Layout>} />
+          <Route path="/clearence" element={<Layout><Clearence /></Layout>} />
+          <Route path="/training" element={<Layout><Trainer /></Layout>} />
+          <Route path="/trainie" element={<Layout><TrainieInfo /></Layout>} />
+          <Route path="/sessiondetail" element={<Layout><SessionDetail /></Layout>} />
+          <Route path="/virtualTrainerInfo" element={<Layout><VirtualTrainieInfo /></Layout>} />
+          <Route path="/virtualsessionDetail" element={<Layout><VirtualSessionDetail /></Layout>} />
+          <Route path="/certificate" element={<Layout><CertificatePage /></Layout>} />
+
+          {/* New Routes */}
+          <Route path="/passed" element={<Layout><Passed /></Layout>} />
+          <Route path="/failed" element={<Layout><Failed /></Layout>} />
+          <Route path="/questionsheet" element={<Layout><Questionsheet /></Layout>} />
         </Routes>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 0; /* Ensure no margin at the top */
+}
+
+.navbar {
+    margin: 0; /* Ensure no margin on the navbar itself */
+    padding: 0; /* Optional: Remove padding if needed */
+    font-family: "Poppins";
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    /* background-color: white; */
+}
+
+.hr{
+    opacity: 0.5;
+}
+
+.right-menu {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
